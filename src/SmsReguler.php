@@ -18,7 +18,7 @@ class SmsReguler
         $this->email = trim($email);
         $this->passkey = trim($passkey);
         $this->json = true;
-        $this->debug = true;
+        $this->debug = false;
     }
 
     public function send($numbers, $message)
