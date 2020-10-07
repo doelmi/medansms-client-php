@@ -58,8 +58,8 @@ var_dump($response);
 ```
 
 ## Pengembangan selanjutnya
-[] Menyediakan untuk call API SMS Masking
-[] Menyediakan untuk call API SMS Center.
+- [ ] Menyediakan untuk call API SMS Masking
+- [ ] Menyediakan untuk call API SMS Center.
 
 ## Untuk support project ini
 Hubungi saya melalui email : abdullahfahmi1997@gmail.com
