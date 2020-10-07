@@ -1,0 +1,16 @@
+{
+    "name": "doelmi/medansms-client-php",
+    "description": "Library untuk API Medan SMS (medansms.co.id)",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Abdullah Fahmi",
+            "email": "abdullahfahmi1997@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "guzzlehttp/guzzle": "^7.1"
+    }
+}
