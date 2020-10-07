@@ -18,8 +18,8 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 use Medansms\SmsReguler;
 
-$email = 'your-email';
-$passkey = 'your-passkey';
+$email = 'email-yang-terdaftar'; //contoh : abdullahfahmi1997@gmail.com
+$passkey = 'passkey-yang-didapatkan'; //contoh : Hm123123
 $smsReguler = new SmsReguler($email, $passkey);
 ```
 
@@ -38,10 +38,16 @@ $smsReguler->setJson(false);
 
 #### Kirim SMS Reguler
 ```php
-$number = 'nomor-yang-dikirim-pesan'; //bisa menggunakan depan 0 atau 62 (jangan menggunakan +62)
+$number = 'nomor-yang-dikirim-pesan'; //bisa menggunakan depan 0 atau 62 (jangan menggunakan +62). contoh : 082257171111
 $message = 'pesan-yang-dikirim';
 $response = $smsReguler->send($number, $message);
 var_dump($response);
+```
+
+Nomor yang dikirimi pesan bisa lebih dari satu, jadinya variabel `$number` berbentuk array. misalnya :
+
+```php
+$number = ['082257171111', '082257171112', '082257171113'];
 ```
 
 #### Laporan SMS Reguler
@@ -49,6 +55,11 @@ var_dump($response);
 $idSendSMS = 'id-unik-sms'; //bentuknya seperti ini : e302fc0475c2b15a5aeec475e08dad05
 $response = $smsReguler->report($idSendSMS);
 var_dump($response);
+```
+
+Laporan SMS Reguler bisa mendapatkan data lebih dari satu id, dengan mengganti variabel `$idSendSMS` menjadi array. misalnya :
+```php
+$idSendSMS = ['e302fc0475c2b15a5aeec475e08dad05', 'e302fc0475c2b15a5aeec475e08da12a', '12d2fc0475c2b15a5aeec475e08dad05'];
 ```
 
 #### Cek Kredit SMS Reguler
@@ -63,7 +74,7 @@ $response = $smsReguler->outbox();
 var_dump($response);
 ```
 
-atau bisa menambahkan parameter $options untuk kotak keluar. Pilihan tersebut bisa pilih salah satu saja, dua atau lebih.
+atau bisa menambahkan parameter `$options` untuk kotak keluar. Pilihan tersebut bisa pilih salah satu saja, dua atau lebih.
 ```php
 $options = [
   'page' => '2', //halaman yang ingin ditampilkan [default : 1]
