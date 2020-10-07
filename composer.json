@@ -12,5 +12,10 @@
     "require": {
         "php": ">=7.2",
         "guzzlehttp/guzzle": "^7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Medansms\\": "src/"
+        }
     }
 }
