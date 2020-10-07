@@ -57,6 +57,45 @@ $response = $smsReguler->checkCredit();
 var_dump($response);
 ```
 
+#### Daftar Kotak Keluar SMS Reguler
+```php
+$response = $smsReguler->outbox();
+var_dump($response);
+```
+
+atau bisa menambahkan parameter $options untuk kotak keluar. Pilihan tersebut bisa pilih salah satu saja, dua atau lebih.
+```php
+$options = [
+  'page' => '2', //halaman yang ingin ditampilkan [default : 1]
+  'rows' => '15', //jumlah baris yang ingin ditampilkan [default : 10]
+  'search' => 'pesan yang dicari', //isi pesan yang ingin dicari 
+  'startDate' => '08 Okt 2020', //format : d M Y
+  'endDate' => '12 Okt 2020' //format : d M Y
+];
+$response = $smsReguler->outbox($options);
+var_dump($response);
+```
+
+#### Detail Kotak Keluar SMS Reguler
+```php
+$idSendSMS = 'id-unik-sms'; //bentuknya seperti ini : e302fc0475c2b15a5aeec475e08dad05
+$response = $smsReguler->outboxDetail($idSendSMS);
+var_dump($response);
+```
+
+#### Hapus Kotak Keluar SMS Reguler
+```php
+$idSendSMS = 'id-unik-sms'; //bentuknya seperti ini : e302fc0475c2b15a5aeec475e08dad05
+$response = $smsReguler->deleteOutbox($idSendSMS);
+var_dump($response);
+```
+
+#### Hapus Seluruh Kotak Keluar SMS Reguler
+```php
+$response = $smsReguler->deleteAllOutbox();
+var_dump($response);
+```
+
 ## Pengembangan selanjutnya
 - [ ] Menyediakan untuk call API SMS Masking
 - [ ] Menyediakan untuk call API SMS Center.
