@@ -1,5 +1,5 @@
 # MedanSMS Client PHP (Unofficial)
-Library untuk API Medan SMS (medansms.co.id)
+Library (Unofficial) untuk Call API Medan SMS (medansms.co.id)
 
 ## Instalasi untuk Composer
 ```php
