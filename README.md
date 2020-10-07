@@ -3,11 +3,11 @@ Library (Unofficial) untuk Call API Medan SMS (medansms.co.id)
 
 ## Instalasi untuk Composer
 ```php
-composer require doelmi/medansms-client-php
+composer require doelmi/medansms-client-php "0.0.1"
 ```
 
 ## Cara menggunakan
-Tolong mendaftar dahulu ke website [MedanSMS](https://medansms.co.id/) untuk mendapatkan Passkey.
+Tolong mendaftar dahulu ke website [MedanSMS](https://medansms.co.id/) untuk mendapatkan Passkey. [Pendaftaran awal mendapatkan kredit SMS Gratis sehingga bisa dicoba dahulu]
 
 ### SMS Reguler
 Memanggil class SmsReguler dengan hostname default ke https://reguler.medansms.co.id/sms_api.php
