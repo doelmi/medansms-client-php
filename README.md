@@ -114,3 +114,6 @@ var_dump($response);
 ## Untuk support project ini
 Hubungi saya melalui email : abdullahfahmi1997@gmail.com
 atau beri saya tip melalui [D'Tip](https://tip.doelmi.id) (Gojek, OVO, LinkAja, Transfer Bank)
+
+## Konek dengan saya
+Tambahkan sebagai teman discord saya : doelmi#9096
