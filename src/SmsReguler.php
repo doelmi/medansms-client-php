@@ -1,4 +1,10 @@
 <?php
+/**
+ * Created by Abdullah Fahmi on Thu Oct 08 2020 03:20:50
+ * Email 	 : abdullahfahmi1997@gmail.com
+ * Website 	 : https://doelmi.id
+ * Copyright (c) 2020 Abdullah Fahmi. All rights reserved.
+ */
 
 namespace Medansms;
 
